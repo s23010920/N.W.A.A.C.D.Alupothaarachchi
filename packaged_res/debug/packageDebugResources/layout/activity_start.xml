@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:gravity="center"
+
+    android:background="#E5F94C"
+
+    android:padding="24dp">
+    <ImageView
+
+        android:id="@+id/logoImageView"
+
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+
+        android:src="@drawable/logo"
+
+        android:contentDescription="App Logo"
+
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+
+        android:id="@+id/appNameTextView"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="STUDY PAL"
+
+        android:textSize="28sp"
+
+        android:textStyle="italic|bold"
+
+        android:textColor="#212121"
+
+        android:fontFamily="serif"
+
+        android:layout_marginBottom="40dp" />
+
+    <Button
+
+        android:id="@+id/loginButton"
+
+        android:layout_width="250dp"
+
+        android:layout_height="48dp"
+
+        android:text="Login"
+
+        android:textStyle="bold"
+
+        android:textColor="#FFFFFF"
+
+        android:background="@drawable/rounded_button"
+
+        android:layout_marginBottom="20dp" />
+
+    <Button
+
+        android:id="@+id/signupButton"
+
+        android:layout_width="250dp"
+
+        android:layout_height="48dp"
+
+        android:text="Sign up"
+
+        android:textStyle="bold"
+
+        android:textColor="#FFFFFF"
+
+        android:background="@drawable/rounded_button" />
+
+</LinearLayout>
+
