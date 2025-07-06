@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.s23010920.studypal">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <application
+
+        android:allowBackup="true"
+
+        android:dataExtractionRules="@xml/data_extraction_rules"
+
+        android:fullBackupContent="@xml/backup_rules"
+
+        android:icon="@drawable/logo"
+
+        android:label="@string/app_name"
+
+        android:roundIcon="@drawable/logo"
+
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.STUDYPAL"
+
+        tools:targetApi="31">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+
+            android:name="com.google.android.geo.API_KEY"
+
+            android:value="AIzaSyAKgFrr3ZB_iYPfDuJckHVe4SxiZh7LQfQ" />
+
+        <!-- Activities -->
+        <activity android:name=".ReminderActivity"/>
+        <activity
+
+            android:name=".StartActivity"
+
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".SignUpActivity" />
+
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+
+        <!-- Add your MapActivity if you have one -->
+        <activity android:name=".MapActivity" />
+
+        <activity
+
+            android:name=".SummaryActivity"
+
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ReminderReceiver"/>
+        <activity android:name=".ReminderReceiver"/>
+    </application>
+</manifest>
+
